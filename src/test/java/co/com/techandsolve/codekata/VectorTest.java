@@ -11,10 +11,9 @@ public class VectorTest {
 		
 		//arrange
 		int[]vectorEnteros= {1,2,3,4,5,6};
-		
 		Vector vector=new Vector();
-		int numeroAEncontrar=3;
-		int posicionExperada=2;
+		int numeroAEncontrar=1;
+		int posicionExperada=0;
 		
 		//act
 		int resultadoObtenido=vector.obtenerNumero(vectorEnteros, numeroAEncontrar);
