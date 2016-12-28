@@ -40,4 +40,25 @@ public class VectorTest {
 		
 	}
 	
+	@Test
+	public void debeRetornarNumeroDePosicionCuandoExistaValorYCuandoNoExista(){
+		
+		//arrange
+		int[]vectorEnteros= {1,2,3,4};
+		Vector vector=new Vector();
+		int primerNumeroAEncontrar=9;
+		int segundoNumeroAEncontrar=2;
+		int posicionExperadaUno=-1;
+		int posicionExperadaDos=1;
+		
+		//act
+		int resultadoObtenidoUno=vector.obtenerNumero(vectorEnteros, primerNumeroAEncontrar);
+		int resultadoObtenidoDos=vector.obtenerNumero(vectorEnteros, segundoNumeroAEncontrar);
+		
+		//assert
+		Assert.assertEquals(posicionExperadaUno, resultadoObtenidoUno);
+		Assert.assertEquals(posicionExperadaDos, resultadoObtenidoDos);
+		
+	}
+	
 }
