@@ -1,55 +1,48 @@
 package co.com.techandsolve.codekata;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class VectorTest {
+	
+	private Vector vector;
+	private int[]vectorEnteros= {1,2,3,4,5,6};
+	
+	private int primerNumeroAEncontrar=9;
+	private int segundoNumeroAEncontrar=2;
+	private int posicionExperadaUno=-1;
+	private int posicionExperadaDos=1;
+	
+	@Before
+	public void setUp(){
+		//arrange
+		vector=new Vector();
+	
+	}
 
 	
 	@Test
 	public void debeEncontrarPosicionVectorSegunNumero(){
-		
-		//arrange
-		int[]vectorEnteros= {1,2,3,4,5,6};
-		Vector vector=new Vector();
-		int numeroAEncontrar=1;
-		int posicionExperada=0;
-		
 		//act
-		int resultadoObtenido=vector.obtenerPosicionMatriz(vectorEnteros, numeroAEncontrar);
-		
+		int resultadoObtenido=vector.obtenerPosicionMatriz(vectorEnteros, segundoNumeroAEncontrar);
 		//assert
-		Assert.assertEquals(posicionExperada, resultadoObtenido);
+		Assert.assertEquals(posicionExperadaDos, resultadoObtenido);
 		
 	}
 	
 	@Test
 	public void debeRetornarMenosUnoCuandoNoExistaValor(){
-		
-		//arrange
-		int[]vectorEnteros= {1,2,3,4};
-		Vector vector=new Vector();
-		int numeroAEncontrar=9;
-		int posicionExperada=-1;
-		
+			
 		//act
-		int resultadoObtenido=vector.obtenerPosicionMatriz(vectorEnteros, numeroAEncontrar);
-		
+		int resultadoObtenido=vector.obtenerPosicionMatriz(vectorEnteros, primerNumeroAEncontrar);
 		//assert
-		Assert.assertEquals(posicionExperada, resultadoObtenido);
+		Assert.assertEquals(posicionExperadaUno, resultadoObtenido);
 		
 	}
 	
 	@Test
 	public void debeRetornarNumeroDePosicionCuandoExistaValorYCuandoNoExista(){
-		
-		//arrange
-		int[]vectorEnteros= {1,2,3,4};
-		Vector vector=new Vector();
-		int primerNumeroAEncontrar=9;
-		int segundoNumeroAEncontrar=2;
-		int posicionExperadaUno=-1;
-		int posicionExperadaDos=1;
 		
 		//act
 		int resultadoObtenidoUno=vector.obtenerPosicionEnMatriz(vectorEnteros, primerNumeroAEncontrar);
