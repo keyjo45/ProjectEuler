@@ -52,8 +52,8 @@ public class VectorTest {
 		int posicionExperadaDos=1;
 		
 		//act
-		int resultadoObtenidoUno=vector.obtenerPosicionEnVector(vectorEnteros, primerNumeroAEncontrar);
-		int resultadoObtenidoDos=vector.obtenerPosicionEnVector(vectorEnteros, segundoNumeroAEncontrar);
+		int resultadoObtenidoUno=vector.obtenerPosicionEnMatriz(vectorEnteros, primerNumeroAEncontrar);
+		int resultadoObtenidoDos=vector.obtenerPosicionEnMatriz(vectorEnteros, segundoNumeroAEncontrar);
 		
 		//assert
 		Assert.assertEquals(posicionExperadaUno, resultadoObtenidoUno);

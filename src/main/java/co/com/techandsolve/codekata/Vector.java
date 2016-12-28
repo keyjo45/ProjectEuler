@@ -16,10 +16,10 @@ public class Vector {
 	}
 	
 	
-	public int obtenerPosicionEnVector(int[] vector, int numeroABuscar) {
+	public int obtenerPosicionEnMatriz(int[] vector, int numeroABuscar) {
 		
 		return Arrays.stream(vector).map(indice->IntStream.range(0,vector.length)
-				.filter(j->vector[j]==numeroABuscar).findFirst().orElse(-1)).findAny().getAsInt();
+				.filter(j->numeroABuscar==vector[j]).findFirst().orElse(-1)).findAny().getAsInt();
 	}	
 	
 }
