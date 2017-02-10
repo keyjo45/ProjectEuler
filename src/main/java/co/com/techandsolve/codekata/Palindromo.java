@@ -12,7 +12,7 @@ public class Palindromo {
 
 				if (esPalindromo(resultado))
 					if (resultado > numeroMayor)
-						numeroMayor = resultado;				
+						numeroMayor = resultado;
 			}
 		}
 		return numeroMayor;

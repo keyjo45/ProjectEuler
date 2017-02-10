@@ -1,9 +1,8 @@
 package co.com.techandsolve.codekata;
 
 public class Fibonacci {
-	
-	
-	public int sumaParesFibonacci(int numeroMaximo){
+
+	public int sumaParesFibonacci(int numeroMaximo) {
 		int serieUno = 1;
 		int serieDos = 1;
 		int suma = 0;
@@ -17,14 +16,14 @@ public class Fibonacci {
 		}
 		return suma;
 	}
-	
+
 	public static void main(String[] args) {
-		
-		Fibonacci fibonacci=new Fibonacci();
-		
-		int suma=fibonacci.sumaParesFibonacci(4000000);
-		
-		System.out.println("Suma pares: "+ suma);
-		         
+
+		Fibonacci fibonacci = new Fibonacci();
+
+		int suma = fibonacci.sumaParesFibonacci(4000000);
+
+		System.out.println("Suma pares: " + suma);
+
 	}
 }
