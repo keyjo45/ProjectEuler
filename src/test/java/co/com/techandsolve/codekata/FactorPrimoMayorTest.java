@@ -9,11 +9,11 @@ public class FactorPrimoMayorTest {
 	
 	@Test
 	public void debeEncontrarFactorPrimoMayor(){
-		long numero=6;
+		long numero=13195;
 		FactoresPrimos factor=new FactoresPrimos();
 		long resultado=factor.factorPrimo(numero);
 		
-		Assert.assertEquals(3, resultado);
+		Assert.assertEquals(29, resultado);
 		
 	}
 

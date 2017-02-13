@@ -11,13 +11,16 @@ public class Palindromo {
 				resultado = numeroUno * numeroDos;
 
 				if (esPalindromo(resultado))
-					if (resultado > numeroMayor)
+					if (resultado > numeroMayor){
 						numeroMayor = resultado;
+						
+						System.out.println(numeroUno+ " "+numeroDos);
+					}
 			}
 		}
 		return numeroMayor;
 	}
-
+	
 	public boolean esPalindromo(int numero) {
 
 		boolean palindromo = true;
