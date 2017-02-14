@@ -16,8 +16,8 @@ public class SumaCuadrado {
 	public static void main(String[] args) {
 
 		SumaCuadrado sumaCuadrado = new SumaCuadrado();
-		int diferencia = sumaCuadrado.restarSumaCuadrados(10);
-		System.out.println(diferencia);
+		int diferencia = sumaCuadrado.restarSumaCuadrados(100);
+		System.out.println("La diferencia de cuadrados es: "+diferencia);
 	}
 
 }
