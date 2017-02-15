@@ -3,7 +3,6 @@ package co.com.techandsolve.codekata;
 public class ProductoLargo {
 
 	public long[] convertirNumeroAArreglo(String numero) {
-
 		long[] dato = new long[numero.length()];
 		for (int i = 0; i < numero.length(); i++)
 			dato[i] = numero.charAt(i) - '0';
@@ -14,7 +13,6 @@ public class ProductoLargo {
 		int i = 0;
 		int indiceDatos;
 		long producto = 0;
-		long resultado;
 		long contador = datos.length;
 		while (i < datos.length) {
 			long[] arreglo = new long[rango];
@@ -26,22 +24,19 @@ public class ProductoLargo {
 					indiceDatos++;
 					indice++;
 				}
-				resultado = productoArreglo(arreglo);
-				if (resultado > producto)
-					producto = resultado;
+				if (productoArreglo(arreglo) > producto)
+					producto = productoArreglo(arreglo);
 			}
 			contador--;
 			i++;
 		}
-
 		return producto;
 	}
 
 	public long productoArreglo(long[] dato) {
 		long producto = 1;
-		for (int i = 0; i < dato.length; i++) {
+		for (int i = 0; i < dato.length; i++)
 			producto *= dato[i];
-		}
 		return producto;
 	}
 
@@ -70,9 +65,6 @@ public class ProductoLargo {
 
 		int rango = 13;
 		ProductoLargo producto = new ProductoLargo();
-
-		long resultado = producto.buscarProductoLargo(producto.convertirNumeroAArreglo(numero), rango);
-
-		System.out.println("El producto mayor es: " + resultado);
+		System.out.println("El producto mayor es: " + producto.buscarProductoLargo(producto.convertirNumeroAArreglo(numero), rango));
 	}
 }
