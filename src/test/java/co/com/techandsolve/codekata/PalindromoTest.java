@@ -21,6 +21,12 @@ public class PalindromoTest {
 		Assert.assertTrue(palindromo.esPalindromo(numero));
 	}
 	
+	@Test
+	public void debeSerPalindromeDos(){
+		int numero=802208;
+		Assert.assertTrue(palindromo.esPalindromo(numero));
+	}
+	
 
 	@Test
 	public void noEsPalindrome(){
