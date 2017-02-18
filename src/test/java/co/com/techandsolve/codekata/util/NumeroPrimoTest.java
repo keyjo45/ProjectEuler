@@ -8,9 +8,17 @@ public class NumeroPrimoTest {
 
 	@Test
 	public void debeSerPrimos(){
-		long numero=5;
-		Assert.assertTrue(NumeroPrimo.esPrimo(numero));
+		Assert.assertTrue(NumeroPrimo.esPrimo(57885161));
+		//Assert.assertTrue(NumeroPrimo.esPrimo(3));
+		//Assert.assertTrue(NumeroPrimo.esPrimo(5));
+		//Assert.assertTrue(NumeroPrimo.esPrimo(7));
+		//Assert.assertTrue(NumeroPrimo.esPrimo(9));
 		
+	}
+	@Test
+	public void noDebeSerPrimos(){
+		
+		Assert.assertFalse(NumeroPrimo.esPrimo(9));
 	}
 
 }

@@ -24,8 +24,10 @@ public class ProductoLargo {
 					indiceDatos++;
 					indice++;
 				}
-				if (productoArreglo(arreglo) > producto)
+				if (productoArreglo(arreglo) > producto){
+					
 					producto = productoArreglo(arreglo);
+				}
 			}
 			contador--;
 			i++;
@@ -35,8 +37,10 @@ public class ProductoLargo {
 
 	public long productoArreglo(long[] dato) {
 		long producto = 1;
-		for (int i = 0; i < dato.length; i++)
+		
+		for (int i = 0; i < dato.length; i++){
 			producto *= dato[i];
+		}
 		return producto;
 	}
 

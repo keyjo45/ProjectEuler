@@ -9,12 +9,20 @@ public class SumaPrimosTest {
 	
 	
 	@Test
-	public void debeSumarPrimos(){
-		long numero=10;
-		SumaPrimos sumaPrimos=new SumaPrimos();
-		
-		long suma=sumaPrimos.sumarPrimos(numero);
-		Assert.assertEquals(17, suma);
-		}
+	public void debeSumarPrimosDebajoDiez(){
+		long numero = 10;
+		SumaPrimos sumaPrimos = new SumaPrimos();
 
+		long suma = sumaPrimos.sumarPrimos(numero);
+		Assert.assertEquals(17, suma);
+	}
+	
+	@Test
+	public void debeSumarPrimosDebajoDosMillones(){
+		long numero = 2000000;
+		SumaPrimos sumaPrimos = new SumaPrimos();
+
+		long suma = sumaPrimos.sumarPrimos(numero);
+		Assert.assertEquals(142913828922L, suma);
+	}
 }

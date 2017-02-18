@@ -7,13 +7,17 @@ public class NumeroPrimo {
 	}
 
 	public static boolean esPrimo(long numero){
-		long contador = 2;
 		boolean primo = true;
-
-		while ((primo) && (contador != numero)) {
-			if ((numero % contador == 0) || (numero / contador == 0))
-				primo = false;
-			contador++;
+		if(numero==2){
+			primo=true;
+		}else{
+			long contador = 2;
+			while ((primo)&&(contador <= Math.ceil(Math.sqrt(numero)))){
+				if (numero % contador == 0){
+					primo = false;
+				}
+				contador++;
+			}
 		}
 		return primo;
 	}
