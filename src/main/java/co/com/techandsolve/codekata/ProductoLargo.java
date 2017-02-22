@@ -1,6 +1,7 @@
 package co.com.techandsolve.codekata;
 
 public class ProductoLargo {
+	
 
 	public long[] convertirNumeroAArreglo(String numero) {
 		long[] dato = new long[numero.length()];

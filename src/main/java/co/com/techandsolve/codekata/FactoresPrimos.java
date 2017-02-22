@@ -10,7 +10,7 @@ public class FactoresPrimos {
 			while (factor <= numero) {
 				if (numero % factor == 0) {
 					numeroMayor = factor;
-					numero = numero / factor;
+					numero /= factor;
 				} else {
 					factor++;
 				}

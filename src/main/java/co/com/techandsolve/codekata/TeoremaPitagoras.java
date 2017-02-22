@@ -8,7 +8,7 @@ public class TeoremaPitagoras {
 		long a = 1;
 		long b;
 		while (a < rango) {
-			b = a;
+			b = a+1;
 			while (b < rango) {
 				long c = rango - b - a;
 				if (encontrarTeoremaPitagoras(a, b, c)) {

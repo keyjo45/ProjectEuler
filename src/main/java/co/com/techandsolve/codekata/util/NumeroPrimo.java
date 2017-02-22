@@ -20,5 +20,5 @@ public class NumeroPrimo {
 			}
 		}
 		return primo;
-	}
+	}	
 }
